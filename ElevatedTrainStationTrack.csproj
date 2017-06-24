@@ -117,7 +117,6 @@
   <ItemGroup>
     <None Include="Assets\Rail1LBridgePillar.crp" />
     <None Include="Assets\Rail1LElevatedPillar.crp" />
-    <None Include="Assets\Rail1LPowerLine.crp" />
     <None Include="Resources\Meshes\10m\Ground_Power_End.obj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

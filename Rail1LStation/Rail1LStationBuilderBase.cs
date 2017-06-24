@@ -68,12 +68,7 @@ namespace SingleTrainTrack.Rail1LStation
 
         public void LateBuildUp(NetInfo info, NetInfoVersion version)
         {
-            var plPropInfo = PrefabCollection<PropInfo>.FindLoaded($"{Util.PackageName("Rail1LPowerLine")}.Rail1LPowerLine_Data");
-            if (plPropInfo == null)
-            {
-                throw new Exception($"{info.name}: Rail1LPowerLine prop not found!");
-            }
-
+            var plPropInfo = PrefabCollection<PropInfo>.FindLoaded("RailwayPowerline Singular");
             var oldPlPropInfo = Prefabs.Find<PropInfo>("RailwayPowerline");
             NetInfoExtensions.ReplaceProps(info, plPropInfo, oldPlPropInfo);
             for (int i = 0; i < info.m_lanes.Count(); i++)
@@ -82,7 +77,7 @@ namespace SingleTrainTrack.Rail1LStation
                 for (int j = 0; j < powerLineProp.Count(); j++)
                 {
                     powerLineProp[j].m_position = new Vector3(2.4f, -0.15f, 0);
-                    powerLineProp[j].m_angle = 180;
+                    powerLineProp[j].m_angle = 0;
                 }
             }
 
