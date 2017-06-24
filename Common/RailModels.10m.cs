@@ -40,14 +40,14 @@ namespace SingleTrainTrack.Common
 
                         nodes1.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes3.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
-                        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes8.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes9.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes10.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes11.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes8.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes9.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes10.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes11.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         nodes12.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes13.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
@@ -140,14 +140,14 @@ namespace SingleTrainTrack.Common
 
                         nodes1.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes2.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
-                        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes8.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes9.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes10.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes11.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes8.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes9.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes10.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes11.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         nodes12.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes13.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
@@ -219,14 +219,14 @@ namespace SingleTrainTrack.Common
 
                         nodes1.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes2.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes8.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes9.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes10.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes11.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes12.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes8.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes9.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes10.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes11.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes12.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         nodes13.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                         nodes14.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
@@ -340,14 +340,14 @@ namespace SingleTrainTrack.Common
 
                     //        nodes1.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                     //        nodes3.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
-                    //        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                    //        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                    //        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                    //        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                    //        nodes8.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                    //        nodes9.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
-                    //        nodes10.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayStart;
-                    //        nodes11.m_connectGroup = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.OnewayEnd;
+                    //        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                    //        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                    //        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                    //        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                    //        nodes8.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                    //        nodes9.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                    //        nodes10.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayStart;
+                    //        nodes11.m_connectGroup = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                     //        nodes12.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;
                     //        nodes13.m_connectGroup = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.Oneway;

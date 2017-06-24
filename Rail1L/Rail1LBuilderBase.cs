@@ -55,8 +55,8 @@ namespace SingleTrainTrack.Rail1L
                 LanesToAdd = -1,
             });
 
-            info.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-            info.m_nodeConnectGroups = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.NarrowTram;
+            info.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+            info.m_nodeConnectGroups = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation;
             var owPlayerNetAI = railInfo.GetComponent<PlayerNetAI>();
             var playerNetAI = info.GetComponent<PlayerNetAI>();
             if (owPlayerNetAI != null && playerNetAI != null)

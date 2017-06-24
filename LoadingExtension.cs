@@ -90,11 +90,13 @@ namespace SingleTrainTrack
                 {
                     continue;
                 }
-                ri.m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
-                ri.m_nodeConnectGroups = NetInfo.ConnectGroup.NarrowTram;
-                if (ri.m_nodes.Length > 1)
+                ri.m_nodeConnectGroups = ri.m_nodeConnectGroups | NetInfo.ConnectGroup.WideTram;
+                foreach (var node in ri.m_nodes)
                 {
-                    ri.m_nodes[1].m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
+                    if (node.m_connectGroup == (NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation))
+                    {
+                        node.m_connectGroup = node.m_connectGroup | NetInfo.ConnectGroup.WideTram;
+                    }
                 }
             }
             try

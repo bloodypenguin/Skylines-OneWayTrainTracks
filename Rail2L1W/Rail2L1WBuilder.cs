@@ -65,7 +65,7 @@ namespace DoubleTrainTrack.Rail2L1W
             }
             info.m_lanes = lanes.ToArray();
             info.m_connectGroup = NetInfo.ConnectGroup.WideTram;
-            info.m_nodeConnectGroups = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.NarrowTram;
+            info.m_nodeConnectGroups = NetInfo.ConnectGroup.WideTram | NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation;
             //var railInfos = new List<NetInfo>();
             //railInfos.Add(railInfo);
             //railInfos.Add(Prefabs.Find<NetInfo>(NetInfos.Vanilla.TRAIN_STATION_TRACK, false));
@@ -74,11 +74,11 @@ namespace DoubleTrainTrack.Rail2L1W
             //{
             //    var ri = railInfos[i];
             //    //info.m_nodes[1].m_connectGroup = (NetInfo.ConnectGroup)9; 
-            //    ri.m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
-            //    railInfo.m_nodeConnectGroups = NetInfo.ConnectGroup.NarrowTram;
+            //    ri.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain;
+            //    railInfo.m_nodeConnectGroups = NetInfo.ConnectGroup.DoubleTrain;
             //    if (railInfo.m_nodes.Length > 1)
             //    {
-            //        railInfo.m_nodes[1].m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
+            //        railInfo.m_nodes[1].m_connectGroup = NetInfo.ConnectGroup.DoubleTrain;
             //    }
 
             //}

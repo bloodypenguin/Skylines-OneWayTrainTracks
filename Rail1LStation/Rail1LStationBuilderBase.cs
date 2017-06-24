@@ -47,8 +47,8 @@ namespace SingleTrainTrack.Rail1LStation
 
             var railLane = info.m_lanes.FirstOrDefault(l => l.m_laneType == NetInfo.LaneType.Vehicle);
             railLane.m_direction = NetInfo.Direction.AvoidForward;
-            info.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-            info.m_nodeConnectGroups = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.NarrowTram;
+            info.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+            info.m_nodeConnectGroups = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation;
 
             var owPlayerNetAI = railInfo.GetComponent<PlayerNetAI>();
             var playerNetAI = info.GetComponent<PlayerNetAI>();
