@@ -89,12 +89,15 @@ namespace SingleTrainTrack
                 {
                     continue;
                 }
-                ri.m_nodeConnectGroups = ri.m_nodeConnectGroups | NetInfo.ConnectGroup.WideTram;
-                foreach (var node in ri.m_nodes)
+                if (ri.name.Contains("Station") || ri.name.Contains("Cargo"))
                 {
-                    if (node.m_connectGroup == (NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation))
+                    ri.m_nodeConnectGroups = ri.m_nodeConnectGroups | NetInfo.ConnectGroup.WideTram;
+                    foreach (var node in ri.m_nodes)
                     {
-                        node.m_connectGroup = node.m_connectGroup | NetInfo.ConnectGroup.WideTram;
+                        if (node.m_connectGroup == (NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation))
+                        {
+                            node.m_connectGroup = node.m_connectGroup | NetInfo.ConnectGroup.WideTram;
+                        }
                     }
                 }
             }
