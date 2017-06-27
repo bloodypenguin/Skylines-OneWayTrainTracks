@@ -24,6 +24,11 @@ namespace SingleTrainTrack.Rail1L.Rail1L1W
             // 3DModeling            //
             ///////////////////////////
             info.Setup6mMesh(version);
+
+            ///////////////////////////
+            // Texturing             //
+            ///////////////////////////
+            info.Setup6mTextures(version);
             base.BuildUp(info, version);
         }
 

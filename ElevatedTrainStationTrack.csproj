@@ -80,11 +80,9 @@
     <Compile Include="Rail1LStation\Rail1L1SidedStation\Rail1LStationBuilder.cs" />
     <Compile Include="Rail1LStation\Rail1L2SidedStation\Rail1L2SidedStationBuilder.cs" />
     <Compile Include="Rail1LStation\Rail1LStationBuilderBase.cs" />
-    <Compile Include="Rail1LStation\Rail1LStationBuilderBase.Texturing.cs" />
     <Compile Include="Rail1L\Rail1L1W\Rail1LBuilder.cs" />
     <Compile Include="Rail1L\Rail1L2W\Rail1L2WBuilder.cs" />
     <Compile Include="Rail1L\Rail1LBuilderBase.cs" />
-    <Compile Include="Rail1L\Rail1LBuilderBase.Texturing.cs" />
     <Compile Include="Rail2L1W\Rail2L1WBuilder.cs" />
     <Compile Include="SharedHelpers.cs" />
     <Compile Include="Util.cs" />

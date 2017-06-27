@@ -24,11 +24,6 @@ namespace SingleTrainTrack.Rail1L
             info.m_class = railInfo.m_class.Clone("APT" + railVersionName);
 
             ///////////////////////////
-            // Texturing             //
-            ///////////////////////////
-            SetupTextures(info, version);
-
-            ///////////////////////////
             // Set up                //
             ///////////////////////////
             info.m_hasParkingSpaces = false;

@@ -29,7 +29,7 @@ namespace SingleTrainTrack.Rail1LStation
             ///////////////////////////
             // Texturing             //
             ///////////////////////////
-            Rail1LStationBuilderBase.SetupTextures(info, version);
+            info.Setup6mStationTextures(version);
 
             ///////////////////////////
             // Set up                //
