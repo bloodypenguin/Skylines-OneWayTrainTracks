@@ -24,12 +24,12 @@ namespace SingleTrainTrack.Rail1LStation
             ///////////////////////////
             // 3DModeling            //
             ///////////////////////////
-            info.Setup6mStationMesh(version);
+            info.Setup6m2WMesh(version);
 
             ///////////////////////////
             // Texturing             //
             ///////////////////////////
-            info.Setup6mStationTextures(version);
+            info.Setup6m2WTextures(version);
 
             ///////////////////////////
             // Set up                //

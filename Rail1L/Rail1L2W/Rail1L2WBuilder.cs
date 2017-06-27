@@ -24,12 +24,12 @@ namespace SingleTrainTrack.Rail1L.Rail1L2W
             ///////////////////////////
             // 3DModeling            //
             ///////////////////////////
-            info.Setup6mMesh(version);
+            info.Setup6m2WMesh(version);
 
             ///////////////////////////
             // Texturing             //
             ///////////////////////////
-            info.Setup6mTextures(version);
+            info.Setup6m2WTextures(version);
             base.BuildUp(info, version);
 
             var railLane = info.m_lanes.FirstOrDefault(l => l.m_laneType == NetInfo.LaneType.Vehicle);

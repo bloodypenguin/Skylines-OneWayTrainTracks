@@ -8,7 +8,7 @@ namespace SingleTrainTrack.Common
 {
     public static partial class RailModels
     {
-        public static void Setup6mStationMesh(this NetInfo info, NetInfoVersion version)
+        public static void Setup6m2WMesh(this NetInfo info, NetInfoVersion version)
         {
             ///////////////////////////
             // Template              //
@@ -513,7 +513,7 @@ namespace SingleTrainTrack.Common
             }
         }
 
-        public static void Setup6mStationTextures(this NetInfo info, NetInfoVersion version)
+        public static void Setup6m2WTextures(this NetInfo info, NetInfoVersion version)
         {
             switch (version)
             {
