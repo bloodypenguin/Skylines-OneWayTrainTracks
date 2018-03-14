@@ -2,12 +2,13 @@
 using SingleTrainTrack.NEXT;
 using SingleTrainTrack.NEXT.Extensions;
 using System;
+using SingleTrainTrack.NEXT.Texturing;
 
 namespace SingleTrainTrack.Common
 {
     public static partial class RailModels
     {
-        public static void Setup6mStationMesh(this NetInfo info, NetInfoVersion version)
+        public static void Setup6m2WMesh(this NetInfo info, NetInfoVersion version)
         {
             ///////////////////////////
             // Template              //
@@ -31,12 +32,12 @@ namespace SingleTrainTrack.Common
                         var nodes6 = info.m_nodes[1].ShallowClone();
                         var nodes7 = info.m_nodes[3].ShallowClone();
 
-                        nodes1.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes3.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes1.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes3.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         segments0
                             .SetFlagsDefault()
@@ -141,12 +142,12 @@ namespace SingleTrainTrack.Common
                         var nodes6 = info.m_nodes[2].ShallowClone();
                         var nodes7 = info.m_nodes[2].ShallowClone();
 
-                        nodes1.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes2.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes1.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes2.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         segments0
                             .SetFlagsDefault()
@@ -245,12 +246,12 @@ namespace SingleTrainTrack.Common
                         var nodes6 = info.m_nodes[2].ShallowClone();
                         var nodes7 = info.m_nodes[2].ShallowClone();
 
-                        nodes1.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes2.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes4.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes1.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes2.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes4.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         segments0
                             .SetFlagsDefault()
@@ -395,12 +396,12 @@ namespace SingleTrainTrack.Common
                         var nodes7 = info.m_nodes[2].ShallowClone();
                         var nodes8 = info.m_nodes[2].ShallowClone();
 
-                        nodes1.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes2.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-                        nodes5.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes6.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
-                        nodes7.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayStart;
-                        nodes8.m_connectGroup = NetInfo.ConnectGroup.NarrowTram | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes1.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes2.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+                        nodes5.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes6.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
+                        nodes7.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayStart;
+                        nodes8.m_connectGroup = NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.OnewayEnd;
 
                         segments0
                             .SetMeshes
@@ -509,6 +510,61 @@ namespace SingleTrainTrack.Common
                         info.m_nodes = new[] { nodes0 };
                     }
                     break;
+            }
+        }
+
+        public static void Setup6m2WTextures(this NetInfo info, NetInfoVersion version)
+        {
+            switch (version)
+            {
+                case NetInfoVersion.Ground:
+                    for (var i = 0; i < info.m_segments.Length; i++)
+                    {
+                        if (info.m_segments[i].m_mesh.name.Contains("Ground_Station_Pavement"))
+                        {
+                            info.m_segments[i].SetTextures(
+                                new TextureSet
+                                (@"Textures\Rail1LStation\Ground_Segment_Pavement__MainTex.png",
+                                    @"Textures\Rail1LStation\Ground_Segment_Pavement__AlphaMap.png"));
+                        }
+                    }
+                    break;
+                case NetInfoVersion.Slope:
+                    for (var i = 0; i < info.m_segments.Length; i++)
+                    {
+                        if (info.m_segments[i].m_mesh.name.Contains("slope"))
+                        {
+                            info.m_segments[i].SetTextures(
+                                new TextureSet
+                                (@"Textures\Rail1LStation\Slope_Segment__MainTex.png",
+                                    @"Textures\Rail1LStation\Slope_Segment__AlphaMap.png"),
+                                new LODTextureSet
+                                (@"Textures\Rail1LStation\Slope_Cover_LOD__MainTex.png",
+                                    @"Textures\Rail1LStation\Slope_Cover_LOD__AlphaMap.png",
+                                    @"Textures\Rail1LStation\Slope_Cover_LOD__XYSMap.png"));
+                        }
+                        else if (info.m_segments[i].m_mesh.name.Contains("Ground_Pavement"))
+                        {
+                            info.m_segments[i].SetTextures(
+                                new TextureSet
+                                (@"Textures\Rail1LStation\Ground_Segment_Pavement__MainTex.png",
+                                    @"Textures\Rail1LStation\Ground_Segment_Pavement__AlphaMap.png",
+                                    null));
+                        }
+                    }
+                    break;
+                case NetInfoVersion.Tunnel:
+                {
+                    info.SetAllSegmentsTexture(
+                        new TextureSet
+                        (@"Textures\Rail1LStation\Tunnel_Segment__MainTex.png",
+                            @"Textures\Rail1LStation\Tunnel_Segment__AlphaMap.png"));
+                    info.SetAllNodesTexture(
+                        new TextureSet
+                        (@"Textures\Rail1LStation\Tunnel_Segment__MainTex.png",
+                            @"Textures\Rail1LStation\Tunnel_Segment__AlphaMap.png"));
+                    break;
+                }
             }
         }
     }

@@ -5,7 +5,6 @@ using ColossalFramework.UI;
 using DoubleTrainTrack.Rail2L1W;
 using ICities;
 using SingleTrainTrack.NEXT;
-using SingleTrainTrack.UI;
 using UnityEngine;
 using Object = UnityEngine.Object;
 using Rail1LBuilder = SingleTrainTrack.Rail1L.Rail1L1W.Rail1LBuilder;
@@ -90,11 +89,16 @@ namespace SingleTrainTrack
                 {
                     continue;
                 }
-                ri.m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
-                ri.m_nodeConnectGroups = NetInfo.ConnectGroup.NarrowTram;
-                if (ri.m_nodes.Length > 1)
+                if (ri.name.Contains("Station") || ri.name.Contains("Cargo"))
                 {
-                    ri.m_nodes[1].m_connectGroup = NetInfo.ConnectGroup.NarrowTram;
+                    ri.m_nodeConnectGroups = ri.m_nodeConnectGroups | NetInfo.ConnectGroup.WideTram;
+                    foreach (var node in ri.m_nodes)
+                    {
+                        if (node.m_connectGroup == (NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation))
+                        {
+                            node.m_connectGroup = node.m_connectGroup | NetInfo.ConnectGroup.WideTram;
+                        }
+                    }
                 }
             }
             try
@@ -134,27 +138,11 @@ namespace SingleTrainTrack
                 Initializer.Tracks1W = null;
                 Initializer.Tracks2W = null;
             }
-            if (mode != LoadMode.NewGame && mode != LoadMode.LoadGame && mode != LoadMode.NewGameFromScenario)
-            {
-                return;
-            }
-            var gameObject = new GameObject("SingleTrainTrackUISetup");
-            gameObject.AddComponent<UpgradeSetup>();
-            if (Util.IsModActive("One-Way Street Arrows"))
-            {
-                gameObject.AddComponent<ArrowsButtonSetup>();
-            }
         }
 
         public override void OnReleased()
         {
             base.OnReleased();
-            var gameObject = GameObject.Find("SingleTrainTrackUISetup");
-            if (gameObject != null)
-            {
-                GameObject.Destroy(gameObject);
-            }
-
             if (Container == null)
             {
                 return;

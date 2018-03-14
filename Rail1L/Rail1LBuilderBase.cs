@@ -24,11 +24,6 @@ namespace SingleTrainTrack.Rail1L
             info.m_class = railInfo.m_class.Clone("APT" + railVersionName);
 
             ///////////////////////////
-            // Texturing             //
-            ///////////////////////////
-            SetupTextures(info, version);
-
-            ///////////////////////////
             // Set up                //
             ///////////////////////////
             info.m_hasParkingSpaces = false;
@@ -55,8 +50,8 @@ namespace SingleTrainTrack.Rail1L
                 LanesToAdd = -1,
             });
 
-            info.m_connectGroup = NetInfo.ConnectGroup.CenterTram;
-            info.m_nodeConnectGroups = NetInfo.ConnectGroup.CenterTram | NetInfo.ConnectGroup.NarrowTram;
+            info.m_connectGroup = NetInfo.ConnectGroup.SingleTrain;
+            info.m_nodeConnectGroups = NetInfo.ConnectGroup.SingleTrain | NetInfo.ConnectGroup.DoubleTrain | NetInfo.ConnectGroup.TrainStation;
             var owPlayerNetAI = railInfo.GetComponent<PlayerNetAI>();
             var playerNetAI = info.GetComponent<PlayerNetAI>();
             if (owPlayerNetAI != null && playerNetAI != null)
@@ -75,11 +70,7 @@ namespace SingleTrainTrack.Rail1L
 
         public void LateBuildUp(NetInfo info, NetInfoVersion version)
         {
-            var plPropInfo = PrefabCollection<PropInfo>.FindLoaded($"{Util.PackageName("Rail1LPowerLine")}.Rail1LPowerLine_Data");
-            if (plPropInfo == null)
-            {
-                throw new Exception($"{info.name}: Rail1LPowerLine prop not found!");
-            }
+            var plPropInfo = PrefabCollection<PropInfo>.FindLoaded("RailwayPowerline Singular");
             var oldPlPropInfo = Prefabs.Find<PropInfo>("RailwayPowerline");
             NetInfoExtensions.ReplaceProps(info, plPropInfo, oldPlPropInfo);
             for (int i = 0; i < info.m_lanes.Count(); i++)
@@ -88,7 +79,7 @@ namespace SingleTrainTrack.Rail1L
                 for (int j = 0; j < powerLineProp.Count(); j++)
                 {
                     powerLineProp[j].m_position = new Vector3(2.4f, -0.15f, 0);
-                    powerLineProp[j].m_angle = 180;
+                    powerLineProp[j].m_angle = 0;
                 }
             }
 
